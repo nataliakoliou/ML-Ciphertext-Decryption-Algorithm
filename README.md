@@ -22,7 +22,6 @@ I would like to express my gratitude to [Interactive Maths](https://crypto.inter
 This code provides a basic implementation of an ML Ciphertext Decryption Algorithm. Users are encouraged to modify the training/testing datasets or the feature-tuple, to observe the impact on the total performance and accuracy.
 
 Here are some suggestions:
-
 ```python
 # Remove some good features from the feature tuple:
 120  for d in (f3, f4, f5, f6, f7, f8, f9, f10):
