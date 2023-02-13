@@ -9,13 +9,12 @@ This project aims to build a decryption tool that uses a multi-class SVM classif
 
 ### Prerequisites
 The following python packages are required for the code to run:
-
 * Python 3: https://www.python.org/downloads/
 * NumPy: ```pip install numpy```
 * Scikit-learn: ```pip install -U scikit-learn```
 
-
-
+### Note
+The code uses the [TRAINING-tolstoy-anna-karenina.txt]() and [TESTING-tolstoy-anna-karenina-1.txt]() files as the training and testing text. These files should be in the same directory as the code.
 
 ## Author
 Natalia Koliou: find me on [LinkedIn](https://www.linkedin.com/in/natalia-k-b37b01197/).
