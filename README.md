@@ -13,8 +13,7 @@ The following python packages are required for the code to run:
 * NumPy: ```pip install numpy```
 * Scikit-learn: ```pip install -U scikit-learn```
 
-## Note
-The code uses the [TRAINING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TRAINING-tolstoy-anna-karenina.txt) and [TESTING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TESTING-tolstoy-anna-karenina.txt) files as the training and testing text. These files should be in the same directory as the code.
+> The code uses the [TRAINING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TRAINING-tolstoy-anna-karenina.txt) and [TESTING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TESTING-tolstoy-anna-karenina.txt) files as the training and testing text. These files should be in the same directory as the code.
 
 ## Acknowledgments
 I would like to express my gratitude to [Interactive Maths](https://crypto.interactive-maths.com/mixed-alphabet-cipher.html) for providing valuable information and resources, that contributed to the development of my project.
@@ -24,16 +23,16 @@ This code provides a basic implementation of an ML Ciphertext Decryption Algorit
 
 Here are some suggestions:
 
-``` 
+```python
 # Remove some good features from the feature tuple:
 120  for d in (f3, f4, f5, f6, f7, f8, f9, f10):
 ```
 
-``` 
+```python
 # Use a different testing dataset:
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88   testing_text = "TESTING-tolstoy-anna-karenina.txt"
-89   decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
+89   decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"
 ```
 <sub> In [this](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/tree/main/datasets) folder, you will find a variety of texts to use for the testing process. You can also create another training dataset from scratch, however it requires a lot of effort and is not recommended.
 
