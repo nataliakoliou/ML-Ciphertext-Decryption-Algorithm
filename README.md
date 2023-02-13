@@ -7,14 +7,17 @@ This project aims to build a decryption tool that uses a multi-class SVM classif
 * **Implement the classification model iteratively:** Trains an SVM classifier on the training plaintext. It then uses this classification model iteratively, to assign class-labels to the testing ciphertext (decryption alphabet prediction).
 * **Decrypt the testing ciphertext:** Applies the predicted decryption alphabet to the testing ciphertext to decrypt it.
 
-### Prerequisites
+## Prerequisites
 The following python packages are required for the code to run:
 * Python 3: https://www.python.org/downloads/
 * NumPy: ```pip install numpy```
 * Scikit-learn: ```pip install -U scikit-learn```
 
-### Note
+## Note
 The code uses the [TRAINING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TRAINING-tolstoy-anna-karenina.txt) and [TESTING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TESTING-tolstoy-anna-karenina.txt) files as the training and testing text. These files should be in the same directory as the code.
+
+## Acknowledgments
+I would like to express my gratitude to [Interactive Maths](https://crypto.interactive-maths.com/mixed-alphabet-cipher.html) for providing valuable information and resources, that contributed to the development of my project.
 
 ## Conclusion
 This code provides a basic implementation of an ML Ciphertext Decryption Algorithm. Users are encouraged to modify the training/testing datasets or the feature-tuple, to observe the impact on the total performance and accuracy.
