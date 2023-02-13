@@ -9,8 +9,7 @@ This project aims to build a decryption tool that uses a multi-class SVM classif
 
 ### Prerequisites
 The following python packages are required for the code to run:
-* numpy
-* collections
-* sklearn
-* string
-* random
+
+* Python 3: https://www.python.org/downloads/
+* NumPy: ```pip install numpy```
+* Scikit-learn: ```pip install -U scikit-learn```
