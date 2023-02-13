@@ -21,18 +21,20 @@ This code provides a basic implementation of an ML Ciphertext Decryption Algorit
 
 Here are some suggestions:
 
-**Remove some good features from the feature tuple:**
 ``` 
+# Remove some good features from the feature tuple:
 120   for d in (f3, f4, f5, f6, f7, f8, f9, f10):
 ```
-**Reduce the size of the training dataset:**
+
 ``` 
+# Reduce the size of the training dataset:
 87    training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88    testing_text = "TESTING-tolstoy-anna-karenina.txt"
 89    decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
 ```
-**Reduce the size of the testing dataset:**
+
 ``` 
+# Reduce the size of the testing dataset:
 87    training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88    testing_text = "TESTING-tolstoy-anna-karenina.txt"
 89    decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
