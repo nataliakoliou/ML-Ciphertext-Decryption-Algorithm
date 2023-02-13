@@ -13,3 +13,9 @@ The following python packages are required for the code to run:
 * Python 3: https://www.python.org/downloads/
 * NumPy: ```pip install numpy```
 * Scikit-learn: ```pip install -U scikit-learn```
+
+
+
+
+## Author
+Natalia Koliou: find me on [LinkedIn](https://www.linkedin.com/in/natalia-k-b37b01197/).
