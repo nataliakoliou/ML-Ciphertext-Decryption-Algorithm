@@ -19,17 +19,19 @@ The code uses the [TRAINING-tolstoy-anna-karenina.txt](https://github.com/natali
 ## Conclusion
 This code provides a basic implementation of an ML Ciphertext Decryption Algorithm. Users are encouraged to modify the training/testing datasets or the feature-tuple, to observe the impact on the total performance and accuracy.
 
-* **Modification.1:** Remove some features from the feature tuple.
+Here are some suggestions:
+
+1) Remove some good features from the feature tuple.
 ``` 
-120        for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
+120   for d in (f3, f4, f5, f6, f7, f8, f9, f10):
 ```
-* **Modification.2:** Reduce the size of the training dataset.
+2) Reduce the size of the training dataset.
 ``` 
 87    training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88    testing_text = "TESTING-tolstoy-anna-karenina.txt"
 89    decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
 ```
-* **Modification.3:** Reduce the size of the testing dataset.
+3) Reduce the size of the testing dataset.
 ``` 
 87    training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88    testing_text = "TESTING-tolstoy-anna-karenina.txt"
