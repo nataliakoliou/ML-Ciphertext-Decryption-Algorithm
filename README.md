@@ -30,18 +30,12 @@ Here are some suggestions:
 ```
 
 ``` 
-# Reduce the size of the training dataset:
+# Use a different testing dataset:
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88   testing_text = "TESTING-tolstoy-anna-karenina.txt"
 89   decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
 ```
-
-``` 
-# Reduce the size of the testing dataset:
-87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
-88   testing_text = "TESTING-tolstoy-anna-karenina.txt"
-89   decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
-```
+> In [this](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/tree/main/datasets) folder, you will find a variety of texts to use for the testing process. You can also create another training dataset from scratch, however it requires a lot of effort and is not recommended.
 
 ## Author
 Natalia Koliou: find me on [LinkedIn](https://www.linkedin.com/in/natalia-k-b37b01197/).
