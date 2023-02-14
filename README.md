@@ -13,6 +13,8 @@ The following python packages are required for the code to run:
 * NumPy: ```pip install numpy```
 * Scikit-learn: ```pip install -U scikit-learn```
 
+**Alternatively:** you can download this [requirements.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/requirements.txt) file and run pip install -r requirements.txt, to automatically install all the packages needed to reproduce my project on your own machine.
+
 > The code uses the [TRAINING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TRAINING-tolstoy-anna-karenina.txt) and [TESTING-tolstoy-anna-karenina.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/datasets/TESTING-tolstoy-anna-karenina.txt) files as the training and testing text. These files should be in the same directory as the code.
 
 ## Acknowledgments
