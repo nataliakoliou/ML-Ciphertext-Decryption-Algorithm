@@ -32,4 +32,4 @@
 88   testing_text = "TESTING-nabokov-pale-fire.txt"
 89   decryption_alphabet = "ghbcafmsztwnroevlixupjyqkd"  # encryption_alphabet = "ecdzofabrvyqglnuxmhjtpkswi"
 ```
-<sub> Choose among these modifications, edit the python code and observe the results!
+> <sub> Choose among these modifications, edit the python code and observe the results!
