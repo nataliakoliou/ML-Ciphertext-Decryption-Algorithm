@@ -20,6 +20,8 @@ The following python packages are required for the code to run:
 ## Acknowledgments
 I would like to express my gratitude to [Interactive Maths](https://crypto.interactive-maths.com/mixed-alphabet-cipher.html) for providing valuable information and resources, that contributed to the development of my project.
 
+All of the books used as training & testing datasets in this project, were obtained from [Project Gutenberg](https://www.gutenberg.org/). Therefore, I would like to acknowledge its invaluable contribution in making these texts freely available for research and analysis.
+
 ## Conclusion
 This code provides a basic implementation of an ML Ciphertext Decryption Algorithm. Users are encouraged to modify the training/testing datasets or the feature-tuple, to observe the impact on the total performance and accuracy.
 
