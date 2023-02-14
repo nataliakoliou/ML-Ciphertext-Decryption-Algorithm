@@ -85,7 +85,7 @@ def update_alphabet(alphabet, fy):
 def load_local_data():
 
     training_text = "TRAINING-tolstoy-anna-karenina.txt"
-    testing_text = "TESTING-tolstoy-anna-karenina-1.txt"
+    testing_text = "TESTING-pushkin-eugene-onegin.txt"
     decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
 
     return training_text, testing_text, decryption_alphabet
