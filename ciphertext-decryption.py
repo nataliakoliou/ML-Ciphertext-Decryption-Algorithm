@@ -102,7 +102,7 @@ def decrypt(text, fy, alphabet):
 
 def process(super_words, alphabet, chunks):
     
-    accuracy = 20
+    accuracy = 10
     features, labels = [], []
     sub_words = list(divide_chunks(super_words, chunks))
 
@@ -163,7 +163,6 @@ def main():
   
     accuracy = accuracy_score(y_test, final_y)
     print("\nAccuracy Classification Score: {:.2f}\n{}".format(accuracy, "-"*127))
-    print(final_y)
 
     complete_alphabet = list(string.ascii_lowercase)
     decrypt(testing_text, final_y, complete_alphabet)
