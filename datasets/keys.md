@@ -4,8 +4,8 @@
 # Modification-1:
 120  for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
 ...
-87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
-88   testing_text = "TESTING-tolstoy-anna-karenina.txt"
+87   training_text = "TRAINING-tolstoy-anna-karenina.txt"  # approx. 99% of the book
+88   testing_text = "TESTING-tolstoy-anna-karenina.txt"  # the last 1% of the book
 89   decryption_alphabet = "rgbhdtkclvnqjxfspamioyzweu"  # encryption_alphabet = "rcheyobdtmgiskuqlapfzjxnvw"
 ```
 ```python
