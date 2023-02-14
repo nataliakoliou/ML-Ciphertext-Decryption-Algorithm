@@ -19,6 +19,8 @@
 ```python
 # Modification-3:
 120  for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
+OR
+120  for d in (f1, f2, f3, f4, f5, f8, f9, f10, f11):
 ...
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
 88   testing_text = "TESTING-pushkin-eugene-onegin.txt"
