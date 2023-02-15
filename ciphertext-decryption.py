@@ -106,9 +106,9 @@ def decrypt(text, fy, alphabet):
         encr_text = f.read()
         decr_text = "".join([decr_dict[encr_char] if encr_char in decr_dict else encr_char 
                             for encr_char in get_letters(encr_text)])
+    wrapped_text = textwrap.fill(decr_text, 140)
     with open("output.txt", 'w') as output:
-        output.write(decr_text)
-    wrapped_text = textwrap.fill(decr_text, width=140)
+        output.write(wrapped_text)
     print('\033[1m' + "Decrypted Ciphertext:\n" + '\033[0m' + wrapped_text)
 
 def process(super_words, alphabet, chunks):
@@ -142,7 +142,7 @@ def process(super_words, alphabet, chunks):
         features.extend(temp_features)
         labels.extend(alphabet)
 
-    plt.tight_layout()
+    plt.tight_layout() # adjusts the spacing between subplots to improve readability
     plt.show()
     X, y = np.array(features), np.array(labels)
     return X, y
