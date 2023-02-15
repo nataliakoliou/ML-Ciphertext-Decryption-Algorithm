@@ -39,7 +39,9 @@ jupyter_client==7.4.4
 jupyter_core==4.11.2
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==3.0.3
+jupyterthemes==0.20.0
 kiwisolver==1.4.4
+lesscpy==0.15.1
 MarkupSafe==2.1.1
 matplotlib==3.6.2
 matplotlib-inline==0.1.6
@@ -58,6 +60,7 @@ pandocfilters==1.5.0
 parso==0.8.3
 pickleshare==0.7.5
 Pillow==9.3.0
+ply==3.11
 prometheus-client==0.15.0
 prompt-toolkit==3.0.32
 psutil==5.9.3
