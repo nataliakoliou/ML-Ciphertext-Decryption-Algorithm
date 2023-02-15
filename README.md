@@ -7,6 +7,8 @@ This project aims to build a decryption tool that uses a multi-class SVM classif
 * **Implement the classification model iteratively:** Trains an SVM classifier on the training plaintext. It then uses this classification model iteratively, to assign class-labels to the testing ciphertext (decryption alphabet prediction).
 * **Decrypt the testing ciphertext:** Applies the predicted decryption alphabet to the testing ciphertext to decrypt it.
 
+Take a look at [this](https://nbviewer.org/github/nataliakoliou/ML-Ciphertext-Decryption/blob/main/ciphertext-decryption.ipynb) demo code in NBViwer :)
+
 ## Prerequisites
 The following python packages are required for the code to run:
 * Python 3: https://www.python.org/downloads/
