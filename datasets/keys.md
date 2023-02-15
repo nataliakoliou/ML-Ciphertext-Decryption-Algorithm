@@ -2,6 +2,8 @@
 
 ```python
 # Modification-1:
+117  fig, axs = plt.subplots(nrows=4, ncols=3, figsize=(12, 8))
+...
 120  for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
 ...
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"  # approx. 99% of the book
@@ -10,6 +12,8 @@
 ```
 ```python
 # Modification-2:
+117  fig, axs = plt.subplots(nrows=3, ncols=3, figsize=(12, 8))
+...
 120  for d in (f0, f1, f2, f3, f4, f8, f9, f10, f11):
 ...
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
@@ -18,8 +22,8 @@
 ```
 ```python
 # Modification-3:
-120  for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
-OR
+117  fig, axs = plt.subplots(nrows=3, ncols=3, figsize=(12, 8))
+...
 120  for d in (f1, f2, f3, f4, f5, f8, f9, f10, f11):
 ...
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
@@ -28,6 +32,8 @@ OR
 ```
 ```python
 # Modification-4:
+117  fig, axs = plt.subplots(nrows=4, ncols=3, figsize=(12, 8))
+...
 120  for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
 ...
 87   training_text = "TRAINING-tolstoy-anna-karenina.txt"
