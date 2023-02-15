@@ -13,7 +13,7 @@ def graph(features, id, ax):
     colors = np.array(['red', 'blue', 'green', 'orange', 'purple', 'pink', 'brown', 'gray', 'black', 'cyan', 'magenta', 'olive', 'gold', 'teal', 'navy', 'maroon', 'crimson', 'lime', 'coral', 'indigo', 'violet', 'turquoise', 'chocolate', 'fuchsia', 'slate', 'khaki'])
     cmap = plt.cm.get_cmap('hsv', len(colors))
     rgba_colors = cmap(np.arange(len(colors)))
-    ax.scatter(np.arange(len(j_values)), j_values, c=rgba_colors)
+    ax.scatter([chr(i + 97) for i in range(len(j_values))], j_values, c=rgba_colors)
     return ax
 
 def extract_feature_FR(alphabet, letters, NL, accuracy):
@@ -162,10 +162,12 @@ def main():
         TE_words = TE_f.read().split()
 
     while not done:
+        print('\033[1m' + "\nTraining Process: " + '\033[0m' + "a,b,c,...,z refer to the real-letters of the English alphabet.")
         X_train, y_train = process(TR_words, alphabet, 400)
         svc = SVC()
         svc.fit(X_train, y_train)
 
+        print('\033[1m' + "\nTesting Process: " + '\033[0m' + "a,b,c,...,z refer to cipher-letters!")
         X_test = process(TE_words, alphabet, len(list(TE_words)))[0]
         y_pred = svc.predict(X_test)
         final_y = update_y(final_y, y_pred)
