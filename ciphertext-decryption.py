@@ -108,7 +108,7 @@ def decrypt(text, fy, alphabet):
                             for encr_char in get_letters(encr_text)])
     with open("output.txt", 'w') as output:
         output.write(decr_text)
-    wrapped_text = textwrap.fill(decr_text, width=120)
+    wrapped_text = textwrap.fill(decr_text, width=140)
     print('\033[1m' + "Decrypted Ciphertext:\n" + '\033[0m' + wrapped_text)
 
 def process(super_words, alphabet, chunks):
