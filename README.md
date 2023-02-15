@@ -12,6 +12,7 @@ The following python packages are required for the code to run:
 * Python 3: https://www.python.org/downloads/
 * NumPy: ```pip install numpy```
 * Scikit-learn: ```pip install -U scikit-learn```
+* Matplotlib: ```pip install numpy sklearn matplotlib```
 
 **Alternatively:** you can download [requirements.txt](https://github.com/nataliakoliou/ML-Ciphertext-Decryption/blob/main/requirements.txt) and run ```pip install -r requirements.txt```, to automatically install all the packages needed to reproduce my project on your own machine.
 
