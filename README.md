@@ -31,7 +31,9 @@ This code provides a basic implementation of an ML Ciphertext Decryption Algorit
 Here are some suggestions:
 ```python
 # Remove some good features from the feature tuple:
-120  for d in (f3, f4, f5, f6, f7, f8, f9, f10):
+117  fig, axs = plt.subplots(nrows=3, ncols=3, figsize=(12, 8))
+...
+120  for d in (f0, f1, f2, f3, f4, f8, f9, f10, f11):
 ```
 
 ```python
