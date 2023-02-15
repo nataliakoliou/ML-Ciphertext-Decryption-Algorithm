@@ -114,7 +114,7 @@ def decrypt(text, fy, alphabet):
 def process(super_words, alphabet, chunks):
     
     accuracy = 10
-    fig, axs = plt.subplots(nrows=5, ncols=2, figsize=(12, 8))
+    fig, axs = plt.subplots(nrows=4, ncols=3, figsize=(12, 8))
     features, labels = [], []
     sub_words = list(divide_chunks(super_words, chunks))
 
@@ -129,7 +129,7 @@ def process(super_words, alphabet, chunks):
         f11 = extract_feature_DL(alphabet, words, letters_times, accuracy)
 
         temp_features = dd(list)  # defines an empty dictionary
-        for d in (f0, f2, f3, f4, f5, f6, f7, f8, f9, f10):
+        for d in (f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11):
             for key, value in d.items():
                 temp_features[key].append(value)
         temp_features = dict(temp_features)  # gets only the dictionary-part
