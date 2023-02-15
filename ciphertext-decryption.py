@@ -1,10 +1,20 @@
 import string
+import textwrap
 import numpy as np
 import random as rand
 import collections as col
 from sklearn.svm import SVC
 from collections import defaultdict as dd
 from sklearn.metrics import accuracy_score
+import matplotlib.pyplot as plt
+
+def graph(features, id, ax):
+    j_values = np.array([row[id] for row in features])
+    colors = np.array(['red', 'blue', 'green', 'orange', 'purple', 'pink', 'brown', 'gray', 'black', 'cyan', 'magenta', 'olive', 'gold', 'teal', 'navy', 'maroon', 'crimson', 'lime', 'coral', 'indigo', 'violet', 'turquoise', 'chocolate', 'fuchsia', 'slate', 'khaki'])
+    cmap = plt.cm.get_cmap('hsv', len(colors))
+    rgba_colors = cmap(np.arange(len(colors)))
+    ax.scatter(np.arange(len(j_values)), j_values, c=rgba_colors)
+    return ax
 
 def extract_feature_FR(alphabet, letters, NL, accuracy):
     feature_FR = dict.fromkeys(alphabet, 0)
@@ -98,11 +108,13 @@ def decrypt(text, fy, alphabet):
                             for encr_char in get_letters(encr_text)])
     with open("output.txt", 'w') as output:
         output.write(decr_text)
-    print("Decrypted Ciphertext:\n" + decr_text)
+    wrapped_text = textwrap.fill(decr_text, width=120)
+    print('\033[1m' + "Decrypted Ciphertext:\n" + '\033[0m' + wrapped_text)
 
 def process(super_words, alphabet, chunks):
     
     accuracy = 10
+    fig, axs = plt.subplots(nrows=4, ncols=3, figsize=(12, 8))
     features, labels = [], []
     sub_words = list(divide_chunks(super_words, chunks))
 
@@ -122,10 +134,16 @@ def process(super_words, alphabet, chunks):
                 temp_features[key].append(value)
         temp_features = dict(temp_features)  # gets only the dictionary-part
         temp_features = list(temp_features.values())  # converts dictionary of lists into a list of lists
+        
+        for i, ax in enumerate(axs.flatten()):
+            ax = graph(temp_features, i, ax)
+            ax.set_title(f'Feature {i}')
 
         features.extend(temp_features)
         labels.extend(alphabet)
 
+    plt.tight_layout()
+    plt.show()
     X, y = np.array(features), np.array(labels)
     return X, y
     
@@ -162,7 +180,7 @@ def main():
                 done = True
   
     accuracy = accuracy_score(y_test, final_y)
-    print("\nAccuracy Classification Score: {:.2f}\n{}".format(accuracy, "-"*127))
+    print('\033[1m' + "\nAccuracy Classification Score: " + '\033[0m' + "{:.2f}".format(accuracy))
 
     complete_alphabet = list(string.ascii_lowercase)
     decrypt(testing_text, final_y, complete_alphabet)
