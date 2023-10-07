@@ -1,6 +1,6 @@
 # Machine-Learning Ciphertext Decryption Algorithm
 
-This project aims to build a decryption tool that uses a multi-class SVM classification model to decrypt ciphertexts, encrypted with some randomly generated mixed-ciphertext alphabet.
+This project introduces a decryption tool that uses a multi-class SVM classification model to decrypt ciphertexts, encrypted with some randomly generated mixed-ciphertext alphabet.
 
 * **Implement manual feature extraction:** Identifies and describes the most common features that define the internal structure of the text-datasets (training & testing). These features include: Single Letter Frequencies, Letter Occurencies in k-letter words, Letter Position Frequencies and Double Letters Frequencies.
 * **Perform manual feature selection:** Creates feature-set (X) and label-set (y), by selecting the features that describe best each class.
